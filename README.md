@@ -6,7 +6,9 @@
 
 This repository contains code that defines which repositories the [@bjerkbot][bjerkbot] accepts invites from.
 
-## Add [@bjerkbot][bjerkbot] to your repository!
+_[@bjerkbot][bjerkbot] is a bot used internally at Bjerk._
+
+## How to add [@bjerkbot][bjerkbot] to a new repository.
 
 You'll probably want to install [Github CLI][github-cli]. That will help you to get the `inviteId` (e.g. `44182036`).
 
@@ -23,9 +25,6 @@ export const repositories = [
 ```
 
 <img width="600" src="https://raw.githubusercontent.com/bjerkio/bot/main/.github/demo.svg" />
-
-Open a pull request with your invi
-
 
 [bjerkbot]: https://github.com/bjerk-bot
 [github-cli]: https://cli.github.com/

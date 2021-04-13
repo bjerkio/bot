@@ -32,4 +32,4 @@ jobs:
         with:
           command: up
           refresh: true
-          stack-name: prod
+          stack-name: bjerk/prod

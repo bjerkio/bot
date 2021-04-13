@@ -30,6 +30,6 @@ jobs:
         with:
           command: preview
           refresh: true
-          stack-name: prod
+          stack-name: bjerk/prod
           comment-on-pr: true
           github-token: ${{ secrets.BJERKBOT_GITHUB_TOKEN }}

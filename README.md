@@ -26,3 +26,4 @@ Open a pull request with your invi
 
 
 [bjerkbot]: https://github.com/bjerk-bot
+[github-cli]: https://cli.github.com/

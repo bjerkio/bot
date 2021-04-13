@@ -6,7 +6,7 @@
 
 This repository contains code that defines which repositories the [@bjerkbot][bjerkbot] has access to.
 
-## Add `bjerk-bot` to your repository!
+## Add [@bjerkbot][bjerkbot] to your repository!
 
 You'll probably want to install [Github CLI][github-cli]. That will help you to get the `inviteId` (e.g. `44182036`).
 

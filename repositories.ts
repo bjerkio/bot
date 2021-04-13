@@ -5,4 +5,6 @@ export interface Repository {
 }
 export const repositories: Repository[] = [
   // { repo: 'bjerkio/bot', invitationId: 44182036, token: true },
+
+  { repo: 'basssene/infra', token: true },
 ];

@@ -5,7 +5,7 @@ import { repositories } from './repositories';
 const config = new pulumi.Config();
 
 const invites = repositories
-  .filter(r => r.token)
+  .filter(r => r.invitationId)
   .map(({ repo, invitationId }) => {
     return new github.UserInvitationAccepter(repo, {
       invitationId: String(invitationId),

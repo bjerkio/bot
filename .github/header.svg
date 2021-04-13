@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 552 552">
+  <defs/>
+  <circle cx="276" cy="276" r="276" fill="#4ECCA3"/>
+  <circle cx="276" cy="276" r="159" fill="url(#paint0_radial)"/>
+  <path fill="#C4C4C4" fill-rule="evenodd" d="M276 455a179 179 0 100-358 179 179 0 000 358zm0-21a158 158 0 100-316 158 158 0 000 316z" clip-rule="evenodd"/>
+  <path fill="url(#paint1_linear)" fill-rule="evenodd" d="M276 463a187 187 0 100-374 187 187 0 000 374zm0-22a165 165 0 100-330 165 165 0 000 330z" clip-rule="evenodd"/>
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientTransform="rotate(90 0 276) scale(159)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF432"/>
+      <stop offset=".2" stop-color="#EE2204"/>
+      <stop offset=".4" stop-color="#470100"/>
+      <stop offset=".8"/>
+    </radialGradient>
+    <linearGradient id="paint1_linear" x1="276" x2="276" y1="89" y2="463" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9F9F9"/>
+      <stop offset="1" stop-color="#46504F"/>
+    </linearGradient>
+  </defs>
+</svg>

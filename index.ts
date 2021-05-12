@@ -30,7 +30,7 @@ reposWithToken.map(({repo}) => {
 reposWithToken.map(({ repo }) => {
   const [org, repository] = repo.split('/');
   return new github.ActionsSecret(
-    repository,
+    `${org}-${repository}`,
     {
       secretName: 'BJERKBOT_GITHUB_TOKEN',
       plaintextValue: config.requireSecret('bjerkbot-github-token'),

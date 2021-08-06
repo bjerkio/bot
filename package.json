@@ -1,10 +1,11 @@
 {
-    "name": "github-npm-token",
-    "devDependencies": {
-        "@types/node": "^10.0.0"
-    },
-    "dependencies": {
-        "@pulumi/github": "^3.4.0",
-        "@pulumi/pulumi": "^2.0.0"
-    }
+  "name": "github-npm-token",
+  "repository": "github:bjerkio/bot",
+  "dependencies": {
+    "@pulumi/github": "^3.4.0",
+    "@pulumi/pulumi": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.0.0"
+  }
 }

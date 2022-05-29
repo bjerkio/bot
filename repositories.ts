@@ -9,4 +9,5 @@ export const repositories: Repository[] = [
   { repo: 'btoolsorg/infra', token: true },
   { repo: 'veltolini/fresh-oyatel', token: true, invitationId: 48116656 },
   { repo: 'taksnor/infra', token: true, invitationId: 109726369 },
+  { repo: 'taksnor/workflows', token: true },
 ];

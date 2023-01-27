@@ -4,6 +4,8 @@ import { repositories } from './repositories';
 
 const config = new pulumi.Config();
 
+const githubToken = config.requireSecret('bjerkbot-github-token');
+
 const invites = repositories
   .filter(r => r.invitationId)
   .map(({ repo, invitationId }) => {
@@ -15,13 +17,15 @@ const invites = repositories
 const reposWithToken = repositories.filter(r => r.token);
 const providers = new Map();
 
-reposWithToken.map(({repo}) => {
+reposWithToken.map(({ repo }) => {
   const [org] = repo.split('/');
   if (!providers.has(org)) {
     providers.set(
       org,
       new github.Provider(org, {
+        owner: org,
         organization: org,
+        token: githubToken,
       }),
     );
   }
@@ -33,9 +37,35 @@ reposWithToken.map(({ repo }) => {
     `${org}-${repository}`,
     {
       secretName: 'BJERKBOT_GITHUB_TOKEN',
-      plaintextValue: config.requireSecret('bjerkbot-github-token'),
+      plaintextValue: githubToken,
       repository,
     },
     { provider: providers.get(org), dependsOn: invites },
   );
 });
+
+const organizations = config.requireObject<string[]>('organizations');
+
+organizations.map(org => {
+  if (!providers.has(org)) {
+    providers.set(
+      org,
+      new github.Provider(org, {
+        owner: org,
+      }),
+    );
+  }
+});
+
+organizations.map(
+  org =>
+    new github.ActionsOrganizationSecret(
+      org,
+      {
+        secretName: 'BJERKBOT_GITHUB_TOKEN',
+        plaintextValue: githubToken,
+        visibility: 'all',
+      },
+      { provider: providers.get(org) },
+    ),
+);

@@ -1,3 +1,5 @@
 name: bjerk-bot
 runtime: nodejs
 description: The Bjerk Bot
+config:
+  pulumi:disable-default-providers: ['*']

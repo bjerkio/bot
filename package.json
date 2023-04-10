@@ -3,7 +3,10 @@
   "repository": "github:bjerkio/bot",
   "dependencies": {
     "@pulumi/github": "^5.3.0",
-    "@pulumi/pulumi": "^3.53.1"
+    "@pulumi/pulumi": "^3.53.1",
+    "date-fns": "^2.29.3",
+    "ts-invariant": "^0.10.3",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@types/node": "^18.11.18"

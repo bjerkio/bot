@@ -4,7 +4,6 @@ config:
   bjerk-bot:repositories-with-github-token:
     - repo: taksnor/infra
     - repo: taksnor/workflows
-    - repo: getbranches/workflows
   bjerkio:org-wide-npm-expires-at: '2023-07-08'
   bjerkio:org-wide-npm-token:
     secure: AAABAKDA8LFLyp9CS4iTUfo/FJDd+DPtpG/+u4xKuA92TVr6L13Jp4Au1k/JJ/VQebb25H38/w2BDxZxf9qeNS2ZP9d5blku

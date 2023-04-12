@@ -8,24 +8,22 @@ jobs:
     name: Check for changes
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
 
-      - uses: actions/cache@v2
-        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+      - name: Setup Node LTS ✨
+        uses: actions/setup-nodejs@v3
         with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-      - run: yarn install
-      - name: Install pulumi
-        uses: pulumi/action-install-pulumi-cli@v1.0.1
-      - uses: pulumi/actions@v3
+          node-version: lts/*
+          cache: yarn
+
+      - name: Installing dependencies 📦️
+        run: yarn install
+
+      - name: Applying infrastructure 🚀
+        uses: pulumi/actions@v4
         env:
-          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
         with:
           command: preview
           refresh: true

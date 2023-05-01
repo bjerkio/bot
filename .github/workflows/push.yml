@@ -23,7 +23,7 @@ jobs:
             ${{ runner.os }}-yarn-
       - run: yarn install
       - name: Install pulumi
-        uses: pulumi/action-install-pulumi-cli@v1.0.1
+        uses: pulumi/action-install-pulumi-cli@v2.0.0
       - uses: pulumi/actions@v4
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}

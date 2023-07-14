@@ -1,12 +1,9 @@
 config:
-  bjerk-bot:repositories-with-github-token:
-    - repo: taksnor/infra
-    - repo: taksnor/workflows
   github:token:
-    secure: AAABAFzbJyEWAxZnIUiV7IQPVDOqhBkMIo5akmquVDRNaQlSvVqnKOujOCgFuZN9bkoXcHd6tAuWgrBhOewaY5qgLA2m+RpS
-  github:token-expires-at: "2023-10-12T16:26:12.839Z"
+    secure: AAABACBlKdGm/kuUYSToDvxLoNJu93dZp6qFZeN10MGie3zo+CxFENxQpvpLsW0an2Y6wOP29wfBPYm4fEIGAbtsBpb8DAZc
+  github:token-expires-at: "2023-10-12T17:02:28.080Z"
   github:token-id:
-    secure: AAABABlEQrB8ykqJHIYWzGvWowiNWmkH4ybL7Nz8cbUzEOn1JUYoooQ=
+    secure: AAABAGHYP1tlpnfEAZ8wZCtKTdtXQ7UexENZikcrOp3gGMKWa4+Kc3U=
   npm:token:
-    secure: AAABABYH2l4RIcb8n4FLVz32NZFK5zFcZ7LtJtYxti3Q1oEj5f2ZSl+tc+yeSGcbNm9+xLP1MdNcmkQC+bdGz3RgP07NAfGk
-  npm:token-expires-at: "2023-10-12T15:38:38.945Z"
+    secure: AAABANec3OTPD09nX1IICGMNdmglSEqjPt5ZHq3MOi9NNB5FUCMl+x205L1FafLyjQqB4fisiWbhNpKjm8d0lDoKrIVmrwbw
+  npm:token-expires-at: "2023-10-12T17:03:05.892Z"

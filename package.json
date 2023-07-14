@@ -1,6 +1,7 @@
 {
   "name": "bjerk-bot",
   "repository": "github:bjerkio/bot",
+  "packageManager": "pnpm@8.6.7",
   "scripts": {
     "update-github-token": "rotate-pulumi-secret github --type github-classic --stack bjerk/prod --config-name github:token",
     "update-npm-token": "rotate-pulumi-secret npm --stack bjerk/prod --username bjerk-bot --config-name npm:token"

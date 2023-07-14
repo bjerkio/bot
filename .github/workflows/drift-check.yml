@@ -35,7 +35,7 @@ jobs:
           stack-name: bjerk/prod
           expect-no-changes: true
 
-      - uses: slackapi/slack-github-action@v1.23.0
+      - uses: slackapi/slack-github-action@v1
         if: failure()
         with:
           payload: |

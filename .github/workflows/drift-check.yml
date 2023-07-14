@@ -39,10 +39,10 @@ jobs:
         with:
           payload: |
             {
-              "repositoryUrl": "bjerkio/bot",
+              "repository": "${{ github.repository }}",
               "jobUrl": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
-              "message": "Issues detected",
-              "details": "${{ steps.pulumi.outputs.output }}"
+              "message": "Drift check failed",
+              "details": ${{ toJSON(steps.pulumi.outputs.output) }}
             }
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DRIFTCHECK_WEBHOOK_URL }}

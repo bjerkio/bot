@@ -1,0 +1,33 @@
+name: Pull Request
+on:
+  pull_request:
+
+jobs:
+  preview-changes:
+    name: Preview changes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - uses: pnpm/action-setup@v2
+
+      - name: Use Node LTS ✨
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          cache: pnpm
+
+      - name: Install dependencies 📦️
+        run: pnpm install --frozen-lockfile
+
+      - name: Run Pulumi 🚀
+        uses: pulumi/actions@v4
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+        with:
+          command: preview
+          refresh: true
+          stack-name: bjerk/prod
+          comment-on-pr: true
+          github-token: ${{ secrets.BJERKBOT_GITHUB_TOKEN }}

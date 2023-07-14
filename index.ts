@@ -1,5 +1,4 @@
-import './github/bjerkorg/org-wide-npm-token.ts';
-import './github/bjerkorg/org-wide-github-token';
-import './github/getbranches/org-wide-github-token';
-
-import './github/repositories-with-github-tokens';
+import './resources/bjerkorg';
+import './resources/getbranches';
+import './resources/github';
+import './resources/npm';

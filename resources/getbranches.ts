@@ -1,8 +1,7 @@
 import * as github from '@pulumi/github';
-import { githubToken } from '../../config';
-import { provider } from './provider';
+import { githubToken, getGithubProvider } from './github';
 
-// TODO: Add a check to see if the token is going to expire.
+const provider = getGithubProvider('getbranches');
 
 new github.ActionsOrganizationSecret(
   'getbranches-github-token',

@@ -2,6 +2,7 @@ name: Drift check
 on:
   schedule:
     - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   check-for-changes:
@@ -11,17 +12,22 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-      - name: Setup Node LTS ✨
-        uses: actions/setup-nodejs@v3
+      - uses: pnpm/action-setup@v2
+
+      - name: Use Node LTS ✨
+        uses: actions/setup-node@v3
         with:
           node-version: lts/*
-          cache: yarn
+          cache: pnpm
 
-      - name: Installing dependencies 📦️
-        run: yarn install
+      - uses: simenandre/setup-gke-gcloud-auth-plugin@v1
+
+      - name: Install dependencies 📦️
+        run: pnpm install --frozen-lockfile
 
       - name: Applying infrastructure 🚀
         uses: pulumi/actions@v4
+        id: pulumi
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
         with:
@@ -29,3 +35,16 @@ jobs:
           refresh: true
           stack-name: bjerk/prod
           expect-no-changes: true
+
+      - uses: slackapi/slack-github-action@v1.23.0
+        # if: failure()
+        with:
+          payload: |
+            {
+              "repositoryUrl": "bjerkio/bot",
+              "jobUrl": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+              "message": "Issues detected",
+              "details": "${{ steps.pulumi.outputs.output }}"
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

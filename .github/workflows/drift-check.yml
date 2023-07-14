@@ -35,7 +35,7 @@ jobs:
           expect-no-changes: true
 
       - uses: slackapi/slack-github-action@v1.23.0
-        # if: failure()
+        if: failure()
         with:
           payload: |
             {

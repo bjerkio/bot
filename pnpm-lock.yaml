@@ -292,8 +292,8 @@ packages:
       - supports-color
     dev: false
 
-  /@pulumi/pulumi@3.78.0:
-    resolution: {integrity: sha512-6mXy3aOGedH3UZAVPhr9hejDNFFKYXG/UF8YF5qYBkA9+c3HJ0bIfwh6ykkr+K5Lt6bdzg6kTClFYiotzPW75Q==}
+  /@pulumi/pulumi@3.78.1:
+    resolution: {integrity: sha512-FjZaHBVILd703u88Cigw03ogW371jw/KC6zqL2TBm9AbTLkSPU3+O0jEuuFBrGCt49H1R76o9wDu8xzGI10XfQ==}
     engines: {node: '>=8.13.0 || >=10.10.0'}
     dependencies:
       '@grpc/grpc-js': 1.9.0
@@ -675,7 +675,7 @@ packages:
     resolution: {integrity: sha512-Nuf+/b3t13tPuApinsjsM4LYl33KY0LACQnGEnyYQqBwMHI1iI+DyjtdiNoM49+m9hjm/Za0lo7/xhMElRRt4A==}
     engines: {node: '>=18'}
     dependencies:
-      '@pulumi/pulumi': 3.78.0
+      '@pulumi/pulumi': 3.78.1
       date-fns: 2.30.0
     transitivePeerDependencies:
       - supports-color
@@ -1234,7 +1234,7 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
-      '@pulumi/pulumi': 3.78.0
+      '@pulumi/pulumi': 3.78.1
       clipanion: 3.2.1(typanion@3.14.0)
       date-fns: 2.30.0
       dedent: 0.7.0

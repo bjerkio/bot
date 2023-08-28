@@ -28,8 +28,8 @@ devDependencies:
 
 packages:
 
-  /@babel/runtime@7.22.10:
-    resolution: {integrity: sha512-21t/fkKLMZI4pqP2wlmsQAWnYW1PDyKyyUV4vCi+B25ydmdaYTKXPwCj0BzSUnZf4seIiYvSA3jcZ3gdsMFkLQ==}
+  /@babel/runtime@7.22.11:
+    resolution: {integrity: sha512-ee7jVNlWN09+KftVOu9n7S8gQzD/Z6hN/I8VBRXW4P1+Xe7kJGXMwu8vds4aGIMHZnNbdpSWCfZZtinytpcAvA==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.0
@@ -42,23 +42,22 @@ packages:
       '@types/node': 18.11.18
     dev: false
 
-  /@grpc/grpc-js@1.9.0:
-    resolution: {integrity: sha512-H8+iZh+kCE6VR/Krj6W28Y/ZlxoZ1fOzsNt77nrdE3knkbSelW1Uus192xOFCxHyeszLj8i4APQkSIXjAoOxXg==}
+  /@grpc/grpc-js@1.9.1:
+    resolution: {integrity: sha512-AvDEPQT4teS+J8++cTE5tku4rYCwpPwPguESJUummLs/Ug/O5Bouofnc1mxaDORmwA9QkrJ+PfRQ1Qs7adQgJg==}
     engines: {node: ^8.13.0 || >=10.10.0}
     dependencies:
-      '@grpc/proto-loader': 0.7.8
+      '@grpc/proto-loader': 0.7.9
       '@types/node': 18.11.18
     dev: false
 
-  /@grpc/proto-loader@0.7.8:
-    resolution: {integrity: sha512-GU12e2c8dmdXb7XUlOgYWZ2o2i+z9/VeACkxTA/zzAe2IjclC5PnVL0lpgjhrqfpDYHzM8B1TF6pqWegMYAzlA==}
+  /@grpc/proto-loader@0.7.9:
+    resolution: {integrity: sha512-YJsOehVXzgurc+lLAxYnlSMc1p/Gu6VAvnfx0ATi2nzvr0YZcjhmZDeY8SeAKv1M7zE3aEJH0Xo9mK1iZ8GYoQ==}
     engines: {node: '>=6'}
     hasBin: true
     dependencies:
-      '@types/long': 4.0.2
       lodash.camelcase: 4.3.0
-      long: 4.0.0
-      protobufjs: 7.2.4
+      long: 5.2.3
+      protobufjs: 7.2.5
       yargs: 17.7.2
     dev: false
 
@@ -292,11 +291,11 @@ packages:
       - supports-color
     dev: false
 
-  /@pulumi/pulumi@3.78.1:
-    resolution: {integrity: sha512-FjZaHBVILd703u88Cigw03ogW371jw/KC6zqL2TBm9AbTLkSPU3+O0jEuuFBrGCt49H1R76o9wDu8xzGI10XfQ==}
+  /@pulumi/pulumi@3.79.0:
+    resolution: {integrity: sha512-BtycJsN073tcrFfAegz8gQF78N+EzjayzFxHwn8RHJ2suENGfQ5GWvI1z6/umxCx8SamOrz8d7rinRRDybPkPA==}
     engines: {node: '>=8.13.0 || >=10.10.0'}
     dependencies:
-      '@grpc/grpc-js': 1.9.0
+      '@grpc/grpc-js': 1.9.1
       '@logdna/tail-file': 2.2.0
       '@opentelemetry/api': 1.4.1
       '@opentelemetry/exporter-zipkin': 1.15.2(@opentelemetry/api@1.4.1)
@@ -327,10 +326,6 @@ packages:
 
   /@pulumi/query@0.3.0:
     resolution: {integrity: sha512-xfo+yLRM2zVjVEA4p23IjQWzyWl1ZhWOGobsBqRpIarzLvwNH/RAGaoehdxlhx4X92302DrpdIFgTICMN4P38w==}
-    dev: false
-
-  /@types/long@4.0.2:
-    resolution: {integrity: sha512-MqTGEo5bj5t157U6fA/BiDynNkn0YknVdh48CMPkTSpFTVmvao5UQmm7uEF6xBEo7qIMAlY/JSleYaE6VOdpaA==}
     dev: false
 
   /@types/node@18.11.18:
@@ -465,7 +460,7 @@ packages:
     resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
     engines: {node: '>=0.11'}
     dependencies:
-      '@babel/runtime': 7.22.10
+      '@babel/runtime': 7.22.11
     dev: false
 
   /debug@4.3.4:
@@ -675,7 +670,7 @@ packages:
     resolution: {integrity: sha512-Nuf+/b3t13tPuApinsjsM4LYl33KY0LACQnGEnyYQqBwMHI1iI+DyjtdiNoM49+m9hjm/Za0lo7/xhMElRRt4A==}
     engines: {node: '>=18'}
     dependencies:
-      '@pulumi/pulumi': 3.78.1
+      '@pulumi/pulumi': 3.79.0
       date-fns: 2.30.0
     transitivePeerDependencies:
       - supports-color
@@ -945,10 +940,6 @@ packages:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
     dev: false
 
-  /long@4.0.0:
-    resolution: {integrity: sha512-XsP+KhQif4bjX1kbuSiySJFNAehNxgLb6hPRGJ9QsUr8ajHkuXGdrHmFUTUUXhDwVX2R5bY4JNZEwbUiMhV+MA==}
-    dev: false
-
   /long@5.2.3:
     resolution: {integrity: sha512-lcHwpNoggQTObv5apGNCTdJrO69eHOZMi4BNC+rTLER8iHAqGrUVeLh/irVIM7zTw2bOXA8T6uNPeujwOLg/2Q==}
     dev: false
@@ -1135,8 +1126,8 @@ packages:
       find-up: 6.3.0
     dev: false
 
-  /protobufjs@7.2.4:
-    resolution: {integrity: sha512-AT+RJgD2sH8phPmCf7OUZR8xGdcJRga4+1cOaXJ64hvcSkVhNcRHOwIxUatPH15+nj59WAGTDv3LSGZPEQbJaQ==}
+  /protobufjs@7.2.5:
+    resolution: {integrity: sha512-gGXRSXvxQ7UiPgfw8gevrfRWcTlSbOFg+p/N+JVJEK5VhueL2miT6qTymqAmjr1Q5WbOCyJbyrk6JfWKwlFn6A==}
     engines: {node: '>=12.0.0'}
     requiresBuild: true
     dependencies:
@@ -1234,7 +1225,7 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
-      '@pulumi/pulumi': 3.78.1
+      '@pulumi/pulumi': 3.79.0
       clipanion: 3.2.1(typanion@3.14.0)
       date-fns: 2.30.0
       dedent: 0.7.0

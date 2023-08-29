@@ -5,4 +5,4 @@ import './resources/getbranches';
 import './resources/github';
 import './resources/npm';
 
-export const gitHubToken = pulumi.secret(github.githubToken);
+export const githubToken = pulumi.secret(github.githubToken);

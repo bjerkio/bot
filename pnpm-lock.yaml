@@ -42,8 +42,8 @@ packages:
       '@types/node': 18.11.18
     dev: false
 
-  /@grpc/grpc-js@1.9.1:
-    resolution: {integrity: sha512-AvDEPQT4teS+J8++cTE5tku4rYCwpPwPguESJUummLs/Ug/O5Bouofnc1mxaDORmwA9QkrJ+PfRQ1Qs7adQgJg==}
+  /@grpc/grpc-js@1.9.2:
+    resolution: {integrity: sha512-Lf2pUhNTaviEdEaGgjU+29qw3arX7Qd/45q66F3z1EV5hroE6wM9xSHPvjB8EY+b1RmKZgwnLWXQorC6fZ9g5g==}
     engines: {node: ^8.13.0 || >=10.10.0}
     dependencies:
       '@grpc/proto-loader': 0.7.9
@@ -291,11 +291,11 @@ packages:
       - supports-color
     dev: false
 
-  /@pulumi/pulumi@3.79.0:
-    resolution: {integrity: sha512-BtycJsN073tcrFfAegz8gQF78N+EzjayzFxHwn8RHJ2suENGfQ5GWvI1z6/umxCx8SamOrz8d7rinRRDybPkPA==}
+  /@pulumi/pulumi@3.80.0:
+    resolution: {integrity: sha512-UsUwlk0yojgZOjK9MiAim8Dlf/m5LQPcrax8Z+H10FvB6KrtLizX/uvS7emkNKXu3Vs6yJ0paiEBn5bim/UQ+g==}
     engines: {node: '>=8.13.0 || >=10.10.0'}
     dependencies:
-      '@grpc/grpc-js': 1.9.1
+      '@grpc/grpc-js': 1.9.2
       '@logdna/tail-file': 2.2.0
       '@opentelemetry/api': 1.4.1
       '@opentelemetry/exporter-zipkin': 1.15.2(@opentelemetry/api@1.4.1)
@@ -356,8 +356,8 @@ packages:
       is-array-buffer: 3.0.2
     dev: false
 
-  /array.prototype.reduce@1.0.5:
-    resolution: {integrity: sha512-kDdugMl7id9COE8R7MHF5jWk7Dqt/fs4Pv+JXoICnYwqpjjjbUurz6w5fT5IG6brLdJhv6/VoHB0H7oyIBXd+Q==}
+  /array.prototype.reduce@1.0.6:
+    resolution: {integrity: sha512-UW+Mz8LG/sPSU8jRDCjVr6J/ZKAGpHfwrZ6kWTG5qCxIEiXdVshqGnu5vEZA8S1y6X4aCSbQZ0/EEsfvEvBiSg==}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
@@ -518,7 +518,7 @@ packages:
       call-bind: 1.0.2
       es-set-tostringtag: 2.0.1
       es-to-primitive: 1.2.1
-      function.prototype.name: 1.1.5
+      function.prototype.name: 1.1.6
       get-intrinsic: 1.2.1
       get-symbol-description: 1.0.0
       globalthis: 1.0.3
@@ -638,8 +638,8 @@ packages:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
     dev: false
 
-  /function.prototype.name@1.1.5:
-    resolution: {integrity: sha512-uN7m/BzVKQnCUF/iW8jYea67v++2u7m5UgENbHRtdDVclOUP+FMPlCNdmk0h/ysGyo2tavMJEDqJAkJdRa1vMA==}
+  /function.prototype.name@1.1.6:
+    resolution: {integrity: sha512-Z5kx79swU5P27WEayXM1tBi5Ze/lbIyiNgU3qyXUOf9b2rgXYyF9Dy9Cx+IQv/Lc8WCG6L82zwUPpSS9hGehIg==}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
@@ -670,7 +670,7 @@ packages:
     resolution: {integrity: sha512-Nuf+/b3t13tPuApinsjsM4LYl33KY0LACQnGEnyYQqBwMHI1iI+DyjtdiNoM49+m9hjm/Za0lo7/xhMElRRt4A==}
     engines: {node: '>=18'}
     dependencies:
-      '@pulumi/pulumi': 3.79.0
+      '@pulumi/pulumi': 3.80.0
       date-fns: 2.30.0
     transitivePeerDependencies:
       - supports-color
@@ -1050,11 +1050,11 @@ packages:
       object-keys: 1.1.1
     dev: false
 
-  /object.getownpropertydescriptors@2.1.6:
-    resolution: {integrity: sha512-lq+61g26E/BgHv0ZTFgRvi7NMEPuAxLkFU7rukXjc/AlwH4Am5xXVnIXy3un1bg/JPbXHrixRkK1itUzzPiIjQ==}
+  /object.getownpropertydescriptors@2.1.7:
+    resolution: {integrity: sha512-PrJz0C2xJ58FNn11XV2lr4Jt5Gzl94qpy9Lu0JlfEj14z88sqbSBJCBEzdlNUCzY2gburhbrwOZ5BHCmuNUy0g==}
     engines: {node: '>= 0.8'}
     dependencies:
-      array.prototype.reduce: 1.0.5
+      array.prototype.reduce: 1.0.6
       call-bind: 1.0.2
       define-properties: 1.2.0
       es-abstract: 1.22.1
@@ -1225,7 +1225,7 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
-      '@pulumi/pulumi': 3.79.0
+      '@pulumi/pulumi': 3.80.0
       clipanion: 3.2.1(typanion@3.14.0)
       date-fns: 2.30.0
       dedent: 0.7.0
@@ -1474,7 +1474,7 @@ packages:
   /util-promisify@2.1.0:
     resolution: {integrity: sha512-K+5eQPYs14b3+E+hmE2J6gCZ4JmMl9DbYS6BeP2CHq6WMuNxErxf5B/n0fz85L8zUuoO6rIzNNmIQDu/j+1OcA==}
     dependencies:
-      object.getownpropertydescriptors: 2.1.6
+      object.getownpropertydescriptors: 2.1.7
     dev: false
 
   /validate-npm-package-license@3.0.4:

@@ -46,12 +46,12 @@ packages:
     resolution: {integrity: sha512-b8iWtdrYIeT5fdZdS4Br/6h/kuk0PW5EVBUGk1amSbrpL8DlktJD43CdcCWwRdd6+jgwHhADSbL9CsNnm6EUPA==}
     engines: {node: ^8.13.0 || >=10.10.0}
     dependencies:
-      '@grpc/proto-loader': 0.7.9
+      '@grpc/proto-loader': 0.7.10
       '@types/node': 18.11.18
     dev: false
 
-  /@grpc/proto-loader@0.7.9:
-    resolution: {integrity: sha512-YJsOehVXzgurc+lLAxYnlSMc1p/Gu6VAvnfx0ATi2nzvr0YZcjhmZDeY8SeAKv1M7zE3aEJH0Xo9mK1iZ8GYoQ==}
+  /@grpc/proto-loader@0.7.10:
+    resolution: {integrity: sha512-CAqDfoaQ8ykFd9zqBDn4k6iWT9loLAlc2ETmDFS9JCD70gDcnA4L3AFEo2iV7KyAtAAHFW9ftq1Fz+Vsgq80RQ==}
     engines: {node: '>=6'}
     hasBin: true
     dependencies:
@@ -291,8 +291,8 @@ packages:
       - supports-color
     dev: false
 
-  /@pulumi/pulumi@3.83.0:
-    resolution: {integrity: sha512-0LrSovjff6dpfcH9ZRmktLYbCETltT2fWW8YwjYjboTIsB3m12TMYzs2oZ6yCiuG+3T3L+hr5mZsH9j01HnNbA==}
+  /@pulumi/pulumi@3.85.0:
+    resolution: {integrity: sha512-eoSTEOpNk8oF2fGcYV6PL3SrbDc3iNQA402Pxq9iuWbyU4J2klzze/qgtLSPLbI24iS6eKWNcHketUQt9bWgXg==}
     engines: {node: '>=8.13.0 || >=10.10.0'}
     dependencies:
       '@grpc/grpc-js': 1.9.3
@@ -681,7 +681,7 @@ packages:
     resolution: {integrity: sha512-Nuf+/b3t13tPuApinsjsM4LYl33KY0LACQnGEnyYQqBwMHI1iI+DyjtdiNoM49+m9hjm/Za0lo7/xhMElRRt4A==}
     engines: {node: '>=18'}
     dependencies:
-      '@pulumi/pulumi': 3.83.0
+      '@pulumi/pulumi': 3.85.0
       date-fns: 2.30.0
     transitivePeerDependencies:
       - supports-color
@@ -1236,7 +1236,7 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
-      '@pulumi/pulumi': 3.83.0
+      '@pulumi/pulumi': 3.85.0
       clipanion: 3.2.1(typanion@3.14.0)
       date-fns: 2.30.0
       dedent: 0.7.0
@@ -1336,7 +1336,7 @@ packages:
     resolution: {integrity: sha512-kN9dJbvnySHULIluDHy32WHRUu3Og7B9sbY7tsFLctQkIqnMh3hErYgdMjTYuqmcXX+lK5T1lnUt3G7zNswmZA==}
     dependencies:
       spdx-expression-parse: 3.0.1
-      spdx-license-ids: 3.0.13
+      spdx-license-ids: 3.0.15
     dev: false
 
   /spdx-exceptions@2.3.0:
@@ -1347,11 +1347,11 @@ packages:
     resolution: {integrity: sha512-cbqHunsQWnJNE6KhVSMsMeH5H/L9EpymbzqTQ3uLwNCLZ1Q481oWaofqH7nO6V07xlXwY6PhQdQ2IedWx/ZK4Q==}
     dependencies:
       spdx-exceptions: 2.3.0
-      spdx-license-ids: 3.0.13
+      spdx-license-ids: 3.0.15
     dev: false
 
-  /spdx-license-ids@3.0.13:
-    resolution: {integrity: sha512-XkD+zwiqXHikFZm4AX/7JSCXA98U5Db4AFd5XUg/+9UNtnH75+Z9KxtpYiJZx36mUDVOwH83pl7yvCer6ewM3w==}
+  /spdx-license-ids@3.0.15:
+    resolution: {integrity: sha512-lpT8hSQp9jAKp9mhtBU4Xjon8LPGBvLIuBiSVhMEtmLecTh2mO0tlqrAMp47tBXzMr13NJMQ2lf7RpQGLJ3HsQ==}
     dev: false
 
   /sprintf-js@1.0.3:

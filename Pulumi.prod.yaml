@@ -4,4 +4,5 @@ config:
   npm:token:
     secure: AAABANec3OTPD09nX1IICGMNdmglSEqjPt5ZHq3MOi9NNB5FUCMl+x205L1FafLyjQqB4fisiWbhNpKjm8d0lDoKrIVmrwbw
   npm:token-expires-at: '2023-10-12T17:03:05.892Z'
-environment: -secrets
+environment:
+  - secrets

@@ -1,9 +1,7 @@
 config:
-  github:token:
-    secure: AAABACBlKdGm/kuUYSToDvxLoNJu93dZp6qFZeN10MGie3zo+CxFENxQpvpLsW0an2Y6wOP29wfBPYm4fEIGAbtsBpb8DAZc
-  github:token-expires-at: "2023-10-12T17:02:28.080Z"
   github:token-id:
     secure: AAABAGHYP1tlpnfEAZ8wZCtKTdtXQ7UexENZikcrOp3gGMKWa4+Kc3U=
   npm:token:
     secure: AAABANec3OTPD09nX1IICGMNdmglSEqjPt5ZHq3MOi9NNB5FUCMl+x205L1FafLyjQqB4fisiWbhNpKjm8d0lDoKrIVmrwbw
-  npm:token-expires-at: "2023-10-12T17:03:05.892Z"
+  npm:token-expires-at: '2023-10-12T17:03:05.892Z'
+environment: -secrets

@@ -1,6 +1,6 @@
 import * as github from '@pulumi/github';
 import { githubToken, getGithubProvider } from './github';
-import { npmToken } from './npm';
+import { npmToken } from './npm';
 
 const provider = getGithubProvider('bjerkio');
 

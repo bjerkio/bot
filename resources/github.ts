@@ -1,10 +1,11 @@
 import * as github from '@pulumi/github';
-import * as pulumi from '@pulumi/pulumi';
-
+import { getToken } from 'get-pulumi-secret';
 export const providers = new Map();
 
-const config = new pulumi.Config('github');
-export const githubToken = config.requireSecret('token');
+export const githubToken = getToken({
+  name: 'token',
+  namespace: 'github',
+});
 
 export function getGithubProvider(org: string): github.Provider {
   if (!providers.has(org)) {

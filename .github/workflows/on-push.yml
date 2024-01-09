@@ -29,9 +29,8 @@ jobs:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
         with:
           command: up
-          refresh: true
           stack-name: bjerk/prod
-  
+
   todo-to-issue:
     name: Create issue from TODO comments
     runs-on: ubuntu-latest

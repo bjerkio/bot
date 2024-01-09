@@ -27,7 +27,6 @@ jobs:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
         with:
           command: preview
-          refresh: true
           stack-name: bjerk/prod
           comment-on-pr: true
           github-token: ${{ secrets.BJERKBOT_GITHUB_TOKEN }}

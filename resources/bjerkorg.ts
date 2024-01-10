@@ -7,7 +7,7 @@ export const bjerkGitHubToken = getToken({
   namespace: 'github',
 });
 
-export const bjerkGitHubProvider = new github.Provider('bjerkio-provider', {
+export const bjerkGitHubProvider = new github.Provider('bjerkio', {
   owner: 'bjerkio',
   token: bjerkGitHubToken,
 });

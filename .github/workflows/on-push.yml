@@ -30,6 +30,7 @@ jobs:
         with:
           command: up
           stack-name: bjerk/prod
+          refresh: true
 
   todo-to-issue:
     name: Create issue from TODO comments

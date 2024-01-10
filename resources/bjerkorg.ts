@@ -1,17 +1,25 @@
 import * as github from '@pulumi/github';
-import { githubToken, getGithubProvider } from './github';
 import { npmToken } from './npm';
+import { getToken } from 'get-pulumi-secret';
 
-const provider = getGithubProvider('bjerkio');
+export const bjerkGitHubToken = getToken({
+  name: 'bjerkio-token',
+  namespace: 'github',
+});
+
+export const bjerkGitHubProvider = new github.Provider('bjerkio-provider', {
+  owner: 'bjerkio',
+  token: bjerkGitHubToken,
+});
 
 new github.ActionsOrganizationSecret(
   'bjerkio-github-token',
   {
-    plaintextValue: githubToken,
+    plaintextValue: bjerkGitHubToken,
     secretName: 'BJERKBOT_GITHUB_TOKEN',
     visibility: 'all',
   },
-  { provider },
+  { provider: bjerkGitHubProvider },
 );
 
 new github.ActionsOrganizationSecret(
@@ -21,5 +29,5 @@ new github.ActionsOrganizationSecret(
     secretName: 'NPM_TOKEN',
     visibility: 'all',
   },
-  { provider },
+  { provider: bjerkGitHubProvider },
 );

@@ -2,15 +2,10 @@
   "name": "bjerk-bot",
   "repository": "github:bjerkio/bot",
   "packageManager": "pnpm@8.14.1",
-  "scripts": {
-    "update-github-token": "rotate-pulumi-secret github --type github-classic --stack bjerk/prod --config-name github:token",
-    "update-npm-token": "rotate-pulumi-secret npm --stack bjerk/prod --username bjerk-bot --config-name npm:token"
-  },
   "dependencies": {
     "@pulumi/github": "^5.3.0",
     "@pulumi/pulumi": "^3.53.1",
     "get-pulumi-secret": "^2.0.0",
-    "rotate-pulumi-secret": "^2.0.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {

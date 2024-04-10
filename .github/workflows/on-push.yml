@@ -32,18 +32,3 @@ jobs:
           command: up
           stack-name: bjerk/prod
           refresh: true
-
-  todo-to-issue:
-    name: Create issue from TODO comments
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4
-
-      - name: Create issue from TODO comments 📝
-        uses: derjuulsn/todo-issue@main
-        with:
-          excludePattern: '^(node_modules/)'
-          label: needs-refinement
-        env:
-          GITHUB_TOKEN: ${{ secrets.BJERKIO_GITHUB_TOKEN }}

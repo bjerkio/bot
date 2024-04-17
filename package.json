@@ -3,7 +3,7 @@
   "repository": "github:bjerkio/bot",
   "packageManager": "pnpm@9.0.1",
   "dependencies": {
-    "@pulumi/github": "^5.3.0",
+    "@pulumi/github": "^6.0.0",
     "@pulumi/pulumi": "^3.53.1",
     "get-pulumi-secret": "^2.0.0",
     "zod": "^3.21.4"

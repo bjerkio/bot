@@ -1,4 +1,4 @@
-name: Push
+name: Refresh
 on:
   workflow_dispatch:
 

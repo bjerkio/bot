@@ -1,17 +1,11 @@
-name: Refresh stack
-
+name: Push
 on:
   workflow_dispatch:
 
-permissions:
-  contents: read
-  id-token: write
-
 jobs:
-  refresh:
-    name: Refresh
+  apply-changes:
+    name: Apply changes
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -24,20 +18,11 @@ jobs:
           node-version: lts/*
           cache: pnpm
 
-      - name: Authenticate with Google 🔑
-        uses: google-github-actions/auth@v1
-        with:
-          workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
-          service_account: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
-
-      - uses: simenandre/setup-gke-gcloud-auth-plugin@v1
-
       - name: Install dependencies 📦️
         run: pnpm install --frozen-lockfile
 
       - name: Run Pulumi 🚀
         uses: pulumi/actions@v4
-        id: pulumi
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
         with:

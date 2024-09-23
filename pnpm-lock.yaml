@@ -13,7 +13,7 @@ importers:
         version: 5.26.0
       '@pulumi/pulumi':
         specifier: ^3.53.1
-        version: 3.132.0
+        version: 3.133.0
       get-pulumi-secret:
         specifier: ^2.0.0
         version: 2.0.0
@@ -31,8 +31,8 @@ packages:
     resolution: {integrity: sha512-VBj9MYyDb9tuLq7yzqjgzt6Q+IBQLrGZfdjOekyEirZPHxXWoTSGUTMrpsfi58Up73d13NfYLv8HT9vmznjzhQ==}
     engines: {node: '>=6.9.0'}
 
-  '@grpc/grpc-js@1.11.2':
-    resolution: {integrity: sha512-DWp92gDD7/Qkj7r8kus6/HCINeo3yPZWZ3paKgDgsbKbSpoxKg1yvN8xe2Q8uE3zOsPe3bX8FQX2+XValq2yTw==}
+  '@grpc/grpc-js@1.11.3':
+    resolution: {integrity: sha512-i9UraDzFHMR+Iz/MhFLljT+fCpgxZ3O6CxwGJ8YuNYHJItIHUzKJpW2LvoFZNnGPwqc9iWy9RAucxV0JoR9aUQ==}
     engines: {node: '>=12.10.0'}
 
   '@grpc/proto-loader@0.7.13':
@@ -92,8 +92,8 @@ packages:
     resolution: {integrity: sha512-gp8pRXC2oOxu0DUE1/M3bYtb1b3/DbJ5aM113+XJBgfXdussRAsX0YOrOhdd8WvnAR6auDBvJomGAkLKA5ydxA==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
 
-  '@npmcli/package-json@5.2.0':
-    resolution: {integrity: sha512-qe/kiqqkW0AGtvBjL8TJKZk/eBBSpnJkUWvHdQ9jM2lKHXRYYJuyNpJPlJw3c8QjC2ow6NZYiLExhUaeJelbxQ==}
+  '@npmcli/package-json@5.2.1':
+    resolution: {integrity: sha512-f7zYC6kQautXHvNbLEWgD/uGu1+xCn9izgqBfgItWSx22U0ZDekxN08A1vM8cTxj/cRVe0Q94Ode+tdoYmIOOQ==}
     engines: {node: ^16.14.0 || >=18.0.0}
 
   '@npmcli/promise-spawn@7.0.2':
@@ -225,8 +225,8 @@ packages:
   '@pulumi/github@5.26.0':
     resolution: {integrity: sha512-4n+GxMbZedRTlG5C1bAYHJXr/OYU5QZ0Y2P5W9WG55EnKT29bzevk/o7XgR36wbt1hqejSe8F5E1hiltUK2aCg==}
 
-  '@pulumi/pulumi@3.132.0':
-    resolution: {integrity: sha512-ntsEo17gALvRdkfKMFrf7EEWrfPHPuRHG/96ziVSItYHofwMLtMk2f7BoRqOSYq3B08wHRkz6J15IUrT9l9wuQ==}
+  '@pulumi/pulumi@3.133.0':
+    resolution: {integrity: sha512-GP5pEmc9yOfbKM59oJqFIKPLSHB+THp0jecWADaVIJUF5CgUE0o8kenWrdOEbYBE9tgNTSCto8MExNrG2NJH+Q==}
     engines: {node: '>=18'}
     peerDependencies:
       ts-node: '>= 7.0.1 < 12'
@@ -1115,7 +1115,7 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.1
 
-  '@grpc/grpc-js@1.11.2':
+  '@grpc/grpc-js@1.11.3':
     dependencies:
       '@grpc/proto-loader': 0.7.13
       '@js-sdsl/ordered-map': 4.4.2
@@ -1161,7 +1161,7 @@ snapshots:
       '@npmcli/metavuln-calculator': 7.1.1
       '@npmcli/name-from-folder': 2.0.0
       '@npmcli/node-gyp': 3.0.0
-      '@npmcli/package-json': 5.2.0
+      '@npmcli/package-json': 5.2.1
       '@npmcli/query': 3.1.0
       '@npmcli/redact': 2.0.1
       '@npmcli/run-script': 8.1.0
@@ -1238,7 +1238,7 @@ snapshots:
 
   '@npmcli/node-gyp@3.0.0': {}
 
-  '@npmcli/package-json@5.2.0':
+  '@npmcli/package-json@5.2.1':
     dependencies:
       '@npmcli/git': 5.0.8
       glob: 10.4.5
@@ -1263,7 +1263,7 @@ snapshots:
   '@npmcli/run-script@8.1.0':
     dependencies:
       '@npmcli/node-gyp': 3.0.0
-      '@npmcli/package-json': 5.2.0
+      '@npmcli/package-json': 5.2.1
       '@npmcli/promise-spawn': 7.0.2
       node-gyp: 10.2.0
       proc-log: 4.2.0
@@ -1380,16 +1380,16 @@ snapshots:
 
   '@pulumi/github@5.26.0':
     dependencies:
-      '@pulumi/pulumi': 3.132.0
+      '@pulumi/pulumi': 3.133.0
     transitivePeerDependencies:
       - bluebird
       - supports-color
       - ts-node
       - typescript
 
-  '@pulumi/pulumi@3.132.0':
+  '@pulumi/pulumi@3.133.0':
     dependencies:
-      '@grpc/grpc-js': 1.11.2
+      '@grpc/grpc-js': 1.11.3
       '@logdna/tail-file': 2.2.0
       '@npmcli/arborist': 7.5.4
       '@opentelemetry/api': 1.9.0
@@ -1687,7 +1687,7 @@ snapshots:
 
   get-pulumi-secret@2.0.0:
     dependencies:
-      '@pulumi/pulumi': 3.132.0
+      '@pulumi/pulumi': 3.133.0
       date-fns: 2.30.0
     transitivePeerDependencies:
       - bluebird
@@ -2019,7 +2019,7 @@ snapshots:
     dependencies:
       '@npmcli/git': 5.0.8
       '@npmcli/installed-package-contents': 2.1.0
-      '@npmcli/package-json': 5.2.0
+      '@npmcli/package-json': 5.2.1
       '@npmcli/promise-spawn': 7.0.2
       '@npmcli/run-script': 8.1.0
       cacache: 18.0.4

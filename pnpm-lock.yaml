@@ -13,7 +13,7 @@ importers:
         version: 5.26.0
       '@pulumi/pulumi':
         specifier: ^3.53.1
-        version: 3.135.1
+        version: 3.136.1
       get-pulumi-secret:
         specifier: ^2.0.0
         version: 2.0.0
@@ -23,7 +23,7 @@ importers:
     devDependencies:
       '@types/node':
         specifier: ^18.11.18
-        version: 18.19.54
+        version: 18.19.55
 
 packages:
 
@@ -31,8 +31,8 @@ packages:
     resolution: {integrity: sha512-FjoyLe754PMiYsFaN5C94ttGiOmBNYTf6pLr4xXHAT5uctHb092PBszndLDR5XA/jghQvn4n7JMHl7dmTgbm9w==}
     engines: {node: '>=6.9.0'}
 
-  '@grpc/grpc-js@1.12.0':
-    resolution: {integrity: sha512-eWdP97A6xKtZXVP/ze9y8zYRB2t6ugQAuLXFuZXAsyqmyltaAjl4yPkmIfc0wuTFJMOUF1AdvIFQCL7fMtaX6g==}
+  '@grpc/grpc-js@1.12.2':
+    resolution: {integrity: sha512-bgxdZmgTrJZX50OjyVwz3+mNEnCTNkh3cIqGPWVNeW9jX6bn1ZkU80uPd+67/ZpIJIjRQ9qaHCjhavyoWYxumg==}
     engines: {node: '>=12.10.0'}
 
   '@grpc/proto-loader@0.7.13':
@@ -225,8 +225,8 @@ packages:
   '@pulumi/github@5.26.0':
     resolution: {integrity: sha512-4n+GxMbZedRTlG5C1bAYHJXr/OYU5QZ0Y2P5W9WG55EnKT29bzevk/o7XgR36wbt1hqejSe8F5E1hiltUK2aCg==}
 
-  '@pulumi/pulumi@3.135.1':
-    resolution: {integrity: sha512-uSAewnD7KgkR0oEzfBlbYbLVJ3qEOXA/Q/NU127DXSOvZi//AMd7MHrIxMd2DIFQnho3cjgtc12r+XZCjkePJQ==}
+  '@pulumi/pulumi@3.136.1':
+    resolution: {integrity: sha512-bO+AVYKyf4dFDVSbBRoCiwAVE0JhugwAEv5FmWit+VHE3f9eoy1qrw7t5DmGmAiL2cGCwTpvVEIf4y1N7360ZA==}
     engines: {node: '>=18'}
     peerDependencies:
       ts-node: '>= 7.0.1 < 12'
@@ -292,8 +292,8 @@ packages:
   '@types/keyv@3.1.4':
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
 
-  '@types/node@18.19.54':
-    resolution: {integrity: sha512-+BRgt0G5gYjTvdLac9sIeE0iZcJxi4Jc4PV5EUzqi+88jmQLr+fRZdv2tCTV7IHKSGxM6SaLoOXQWWUiLUItMw==}
+  '@types/node@18.19.55':
+    resolution: {integrity: sha512-zzw5Vw52205Zr/nmErSEkN5FLqXPuKX/k5d1D7RKHATGqU7y6YfX9QxZraUzUrFGqH6XzOzG196BC35ltJC4Cw==}
 
   '@types/responselike@1.0.3':
     resolution: {integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==}
@@ -1115,7 +1115,7 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.1
 
-  '@grpc/grpc-js@1.12.0':
+  '@grpc/grpc-js@1.12.2':
     dependencies:
       '@grpc/proto-loader': 0.7.13
       '@js-sdsl/ordered-map': 4.4.2
@@ -1380,16 +1380,16 @@ snapshots:
 
   '@pulumi/github@5.26.0':
     dependencies:
-      '@pulumi/pulumi': 3.135.1
+      '@pulumi/pulumi': 3.136.1
     transitivePeerDependencies:
       - bluebird
       - supports-color
       - ts-node
       - typescript
 
-  '@pulumi/pulumi@3.135.1':
+  '@pulumi/pulumi@3.136.1':
     dependencies:
-      '@grpc/grpc-js': 1.12.0
+      '@grpc/grpc-js': 1.12.2
       '@logdna/tail-file': 2.2.0
       '@npmcli/arborist': 7.5.4
       '@opentelemetry/api': 1.9.0
@@ -1474,7 +1474,7 @@ snapshots:
     dependencies:
       '@types/http-cache-semantics': 4.0.4
       '@types/keyv': 3.1.4
-      '@types/node': 18.19.54
+      '@types/node': 18.19.55
       '@types/responselike': 1.0.3
 
   '@types/google-protobuf@3.15.12': {}
@@ -1483,15 +1483,15 @@ snapshots:
 
   '@types/keyv@3.1.4':
     dependencies:
-      '@types/node': 18.19.54
+      '@types/node': 18.19.55
 
-  '@types/node@18.19.54':
+  '@types/node@18.19.55':
     dependencies:
       undici-types: 5.26.5
 
   '@types/responselike@1.0.3':
     dependencies:
-      '@types/node': 18.19.54
+      '@types/node': 18.19.55
 
   '@types/semver@7.5.8': {}
 
@@ -1687,7 +1687,7 @@ snapshots:
 
   get-pulumi-secret@2.0.0:
     dependencies:
-      '@pulumi/pulumi': 3.135.1
+      '@pulumi/pulumi': 3.136.1
       date-fns: 2.30.0
     transitivePeerDependencies:
       - bluebird
@@ -2093,7 +2093,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 18.19.54
+      '@types/node': 18.19.55
       long: 5.2.3
 
   pump@3.0.2:

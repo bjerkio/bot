@@ -1,7 +1,7 @@
 {
   "name": "bjerk-bot",
   "repository": "github:bjerkio/bot",
-  "packageManager": "pnpm@9.15.2",
+  "packageManager": "pnpm@9.15.3",
   "dependencies": {
     "@pulumi/github": "^5.3.0",
     "@pulumi/pulumi": "^3.53.1",

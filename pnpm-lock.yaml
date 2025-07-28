@@ -13,7 +13,7 @@ importers:
         version: 5.26.0
       '@pulumi/pulumi':
         specifier: ^3.53.1
-        version: 3.184.0
+        version: 3.186.0
       get-pulumi-secret:
         specifier: ^2.0.0
         version: 2.0.0
@@ -27,8 +27,8 @@ importers:
 
 packages:
 
-  '@babel/runtime@7.27.6':
-    resolution: {integrity: sha512-vbavdySgbTTrmFE+EsiqUTzlOr5bzlnJtUv9PynGCAKvfQqjIXbvFdumPM/GxMDfyuGMJaJAU6TO4zc1Jf1i8Q==}
+  '@babel/runtime@7.28.2':
+    resolution: {integrity: sha512-KHp2IflsnGywDjBWDkR9iEqiWSpc8GIi0lgTT3mOElT0PP1tG26P4tmFI2YvAdzgq9RGyoHZQEIEdZy6Ec5xCA==}
     engines: {node: '>=6.9.0'}
 
   '@grpc/grpc-js@1.13.4':
@@ -225,8 +225,8 @@ packages:
   '@pulumi/github@5.26.0':
     resolution: {integrity: sha512-4n+GxMbZedRTlG5C1bAYHJXr/OYU5QZ0Y2P5W9WG55EnKT29bzevk/o7XgR36wbt1hqejSe8F5E1hiltUK2aCg==}
 
-  '@pulumi/pulumi@3.184.0':
-    resolution: {integrity: sha512-hseyV9cDUcu6MgXnnuKibIx5DtZVjS0judMYQdy74vau8CCKIAoIJGoURaKIl0KCT8OuvaMCHS+iOG/8o8VSCg==}
+  '@pulumi/pulumi@3.186.0':
+    resolution: {integrity: sha512-2BHNlqKm2qhViVA2U3Ca1xsux/2hEmUd85AMAnoDY9bA0ut82JNFLwsI5Bl9AABnOHeUdxSm0NDbD+/T5VxOEQ==}
     engines: {node: '>=20'}
     peerDependencies:
       ts-node: '>= 7.0.1 < 12'
@@ -1106,7 +1106,7 @@ packages:
 
 snapshots:
 
-  '@babel/runtime@7.27.6': {}
+  '@babel/runtime@7.28.2': {}
 
   '@grpc/grpc-js@1.13.4':
     dependencies:
@@ -1373,14 +1373,14 @@ snapshots:
 
   '@pulumi/github@5.26.0':
     dependencies:
-      '@pulumi/pulumi': 3.184.0
+      '@pulumi/pulumi': 3.186.0
     transitivePeerDependencies:
       - bluebird
       - supports-color
       - ts-node
       - typescript
 
-  '@pulumi/pulumi@3.184.0':
+  '@pulumi/pulumi@3.186.0':
     dependencies:
       '@grpc/grpc-js': 1.13.4
       '@logdna/tail-file': 2.2.0
@@ -1595,7 +1595,7 @@ snapshots:
 
   date-fns@2.30.0:
     dependencies:
-      '@babel/runtime': 7.27.6
+      '@babel/runtime': 7.28.2
 
   debug@4.4.1:
     dependencies:
@@ -1672,7 +1672,7 @@ snapshots:
 
   get-pulumi-secret@2.0.0:
     dependencies:
-      '@pulumi/pulumi': 3.184.0
+      '@pulumi/pulumi': 3.186.0
       date-fns: 2.30.0
     transitivePeerDependencies:
       - bluebird

@@ -13,7 +13,7 @@ importers:
         version: 5.26.0
       '@pulumi/pulumi':
         specifier: ^3.53.1
-        version: 3.202.0
+        version: 3.203.0
       get-pulumi-secret:
         specifier: ^2.0.0
         version: 2.0.0
@@ -225,8 +225,8 @@ packages:
   '@pulumi/github@5.26.0':
     resolution: {integrity: sha512-4n+GxMbZedRTlG5C1bAYHJXr/OYU5QZ0Y2P5W9WG55EnKT29bzevk/o7XgR36wbt1hqejSe8F5E1hiltUK2aCg==}
 
-  '@pulumi/pulumi@3.202.0':
-    resolution: {integrity: sha512-Vxpo6K4dpHb4ldxxp1IvG3lzIIthmd5dWguLySqbz7MmEksHPvbgSzk2I2v8SJKGjluozQASYpgW+1myUIZjGA==}
+  '@pulumi/pulumi@3.203.0':
+    resolution: {integrity: sha512-wXGzxYC61DF+YtJYwidxrpvRxn2y3+ML5OUuAQWUzPgM0byEgKotHAhadQ9uvfutSE262mmoqv5skXaDJdBGzQ==}
     engines: {node: '>=20'}
     peerDependencies:
       ts-node: '>= 7.0.1 < 12'
@@ -1368,14 +1368,14 @@ snapshots:
 
   '@pulumi/github@5.26.0':
     dependencies:
-      '@pulumi/pulumi': 3.202.0
+      '@pulumi/pulumi': 3.203.0
     transitivePeerDependencies:
       - bluebird
       - supports-color
       - ts-node
       - typescript
 
-  '@pulumi/pulumi@3.202.0':
+  '@pulumi/pulumi@3.203.0':
     dependencies:
       '@grpc/grpc-js': 1.14.0
       '@logdna/tail-file': 2.2.0
@@ -1667,7 +1667,7 @@ snapshots:
 
   get-pulumi-secret@2.0.0:
     dependencies:
-      '@pulumi/pulumi': 3.202.0
+      '@pulumi/pulumi': 3.203.0
       date-fns: 2.30.0
     transitivePeerDependencies:
       - bluebird

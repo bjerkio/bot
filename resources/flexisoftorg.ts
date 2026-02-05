@@ -1,12 +1,11 @@
 import * as github from '@pulumi/github';
 import * as pulumi from '@pulumi/pulumi';
-import { getToken } from 'get-pulumi-secret';
+import { getToken } from './op-secret';
+
+const config = new pulumi.Config('op');
 
 export const flexisoftGitHubToken = pulumi.secret(
-  getToken({
-    name: 'flexisoftorg-token',
-    namespace: 'github',
-  }),
+  await getToken(config.require('flexisoftorg-github-token-path')),
 );
 
 export const flexisoftGitHubProvider = new github.Provider('flexisoftorg', {

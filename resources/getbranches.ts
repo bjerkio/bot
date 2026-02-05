@@ -1,12 +1,11 @@
 import * as github from '@pulumi/github';
 import * as pulumi from '@pulumi/pulumi';
-import { getToken } from 'get-pulumi-secret';
+import { getToken } from './op-secret.js';
+
+const config = new pulumi.Config('op');
 
 export const branchesGitHubToken = pulumi.secret(
-  getToken({
-    name: 'getbranches-token',
-    namespace: 'github',
-  }),
+  await getToken(config.require('getbranches-github-token-path')),
 );
 
 export const branchesGitHubProvider = new github.Provider('getbranches', {

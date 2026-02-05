@@ -1,13 +1,12 @@
 import * as github from '@pulumi/github';
 import * as pulumi from '@pulumi/pulumi';
-import { npmToken } from './npm';
-import { getToken } from 'get-pulumi-secret';
+import { npmToken } from './npm.js';
+import { getToken } from './op-secret.js';
+
+const config = new pulumi.Config('op');
 
 export const bjerkGitHubToken = pulumi.secret(
-  getToken({
-    name: 'bjerkio-token',
-    namespace: 'github',
-  }),
+  await getToken(config.require('bjerkio-github-token-path')),
 );
 
 export const bjerkGitHubProvider = new github.Provider('bjerkio', {

@@ -1,4 +1,4 @@
-import { getToken } from './op-secret';
+import { getToken } from './op-secret.js';
 import * as pulumi from '@pulumi/pulumi';
 
 const config = new pulumi.Config();

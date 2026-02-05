@@ -1,8 +1,8 @@
-import { createClient } from '@1password/sdk';
+import { createClient, Client } from '@1password/sdk';
 import * as pulumi from '@pulumi/pulumi';
 
-const config = new pulumi.Config();
-const token = config.require('op:service-account-token');
+const config = new pulumi.Config('op');
+const token = config.require('service-account-token');
 
 const client = await createClient({
   auth: token,

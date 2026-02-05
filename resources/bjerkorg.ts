@@ -1,7 +1,7 @@
 import * as github from '@pulumi/github';
 import * as pulumi from '@pulumi/pulumi';
-import { npmToken } from './npm';
-import { getToken } from './op-secret';
+import { npmToken } from './npm.js';
+import { getToken } from './op-secret.js';
 
 const config = new pulumi.Config('op');
 

@@ -1,4 +1,4 @@
-import './resources/bjerkorg';
-import './resources/getbranches';
-import './resources/npm';
-import './resources/flexisoftorg';
+import './resources/bjerkorg.js';
+import './resources/getbranches.js';
+import './resources/npm.js';
+import './resources/flexisoftorg.js';

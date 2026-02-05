@@ -1,6 +1,6 @@
 import * as github from '@pulumi/github';
 import * as pulumi from '@pulumi/pulumi';
-import { getToken } from './op-secret';
+import { getToken } from './op-secret.js';
 
 const config = new pulumi.Config('op');
 

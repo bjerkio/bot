@@ -12,8 +12,8 @@ importers:
         specifier: ^0.3.1
         version: 0.3.1
       '@pulumi/github':
-        specifier: ^5.3.0
-        version: 5.26.0(ts-node@10.9.2(@types/node@18.19.130)(typescript@5.9.3))(typescript@5.9.3)
+        specifier: ^6.0.0
+        version: 6.15.0(ts-node@10.9.2(@types/node@18.19.130)(typescript@5.9.3))(typescript@5.9.3)
       '@pulumi/pulumi':
         specifier: ^3.218.0
         version: 3.227.0(ts-node@10.9.2(@types/node@18.19.130)(typescript@5.9.3))(typescript@5.9.3)
@@ -276,8 +276,8 @@ packages:
   '@protobufjs/utf8@1.1.0':
     resolution: {integrity: sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==}
 
-  '@pulumi/github@5.26.0':
-    resolution: {integrity: sha512-4n+GxMbZedRTlG5C1bAYHJXr/OYU5QZ0Y2P5W9WG55EnKT29bzevk/o7XgR36wbt1hqejSe8F5E1hiltUK2aCg==}
+  '@pulumi/github@6.15.0':
+    resolution: {integrity: sha512-U8ZxPQQcOrcTn8y8EZsWmXzMtbw0JnwWCVGmqxBZ/i2SpUlEGMYT9B+EFC/qTALZXkDf7cMiq6fZ3Gy1G23nyQ==}
 
   '@pulumi/pulumi@3.227.0':
     resolution: {integrity: sha512-0G7C5gHyx65wIciTfSTw8WcXh3MOWQx/9ZEpWroFCgHrChTg9osUXQPzeKXwcuIiWu76vLWZe9PmmtLTTbOs3Q==}
@@ -1420,7 +1420,7 @@ snapshots:
 
   '@protobufjs/utf8@1.1.0': {}
 
-  '@pulumi/github@5.26.0(ts-node@10.9.2(@types/node@18.19.130)(typescript@5.9.3))(typescript@5.9.3)':
+  '@pulumi/github@6.15.0(ts-node@10.9.2(@types/node@18.19.130)(typescript@5.9.3))(typescript@5.9.3)':
     dependencies:
       '@pulumi/pulumi': 3.227.0(ts-node@10.9.2(@types/node@18.19.130)(typescript@5.9.3))(typescript@5.9.3)
     transitivePeerDependencies:

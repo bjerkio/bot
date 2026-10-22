@@ -5,7 +5,7 @@
   "type": "module",
   "dependencies": {
     "@1password/sdk": "^0.3.1",
-    "@pulumi/github": "^5.3.0",
+    "@pulumi/github": "^6.0.0",
     "@pulumi/pulumi": "^3.218.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.0",
